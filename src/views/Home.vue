@@ -10,7 +10,7 @@
 export default {
   data: function () {
     return {
-      message: "Welcome to Peresonal Resume Frontend",
+      message: "Hello",
     };
   },
   created: function () {},
