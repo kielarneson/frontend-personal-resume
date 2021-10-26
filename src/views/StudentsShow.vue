@@ -7,20 +7,17 @@
 <style></style>
 
 <script>
-// import axios from "axios";
+import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "test",
-      student: { first_name: "Kiel", last_name: "Arneson" },
+      student: {},
     };
   },
   created: function () {
-    // axios.get("/students/" + this.$route.params.id).then((response) => {
-    //   console.log("students-show", response);
-    //   this.student = response.data;
-    // });
-    this.student;
+    axios.get("/https://afternoon-reaches-14167.herokuapp.com/students").then((response) => {
+      this.student = response.data;
+    });
   },
   methods: {},
 };
