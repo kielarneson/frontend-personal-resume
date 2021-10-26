@@ -10,7 +10,7 @@
 export default {
   data: function () {
     return {
-      message: "Hello",
+      message: "Hi",
     };
   },
   created: function () {},
