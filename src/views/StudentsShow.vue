@@ -1,6 +1,6 @@
 <template>
   <div class="students-show">
-    <h2>{{ student.first_name }} {{ student.last_name }}</h2>
+    <h2>{{ student }}</h2>
   </div>
 </template>
 
