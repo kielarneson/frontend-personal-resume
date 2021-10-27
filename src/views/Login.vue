@@ -31,12 +31,12 @@ export default {
   methods: {
     submit: function () {
       axios
-        .post("/sessions", this.newSessionParams)
+        .post("https://afternoon-reaches-14167.herokuapp.com/sessions", this.newSessionParams)
         .then((response) => {
           axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
-          localStorage.setItem("user_id", response.data.user_id);
-          this.$router.push("/StudentsShow");
+          localStorage.setItem("student_id", response.data.student_id);
+          this.$router.push(`/students/${response.data.student_id}`);
         })
         .catch((error) => {
           console.log(error.response);
