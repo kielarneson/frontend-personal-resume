@@ -7,7 +7,7 @@
       |
       <router-link to="/login">Login</router-link>
       |
-      <router-link to="/students">My Profile</router-link>
+      <router-link to="/profile">My Profile</router-link>
     </div>
     <router-view />
   </div>
