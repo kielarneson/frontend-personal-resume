@@ -11,12 +11,12 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "test",
       student: {},
     };
   },
   created: function () {
-    axios.get(`https://afternoon-reaches-14167.herokuapp.com/students`).then((response) => {
+    let student_id = localStorage.getItem("student_id");
+    axios.get(`https://afternoon-reaches-14167.herokuapp.com/students/${student_id}`).then((response) => {
       console.log("Student Show", response);
       this.student = response.data;
     });
