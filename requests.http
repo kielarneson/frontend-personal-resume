@@ -1,0 +1,7 @@
+POST https://afternoon-reaches-14167.herokuapp.com/sessions
+Content-Type: application/json
+
+{
+  "email": "morris@ritchie-conn.com",
+  "password": "password"
+}

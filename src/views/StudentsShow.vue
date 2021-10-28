@@ -20,9 +20,6 @@
       <input type="text" v-model="student.short_bio" />
     </div>
 
-    <br />
-    <button @click="updateStudent(student)">Update Student</button>
-
     <div>
       LinkenIn:
       <input type="text" v-model="student.linkedin_url" />
@@ -35,6 +32,7 @@
       Resume:
       <input type="text" v-model="student.online_resume_url" />
     </div>
+    <button @click="updateStudent(student)">Update Student</button>
 
     <h3>Experience</h3>
     <div v-for="experience in experiences" v-bind:key="`experience-${experience.id}`">
